@@ -1,0 +1,5 @@
+tasks:
+  - init: bundle install
+vscode:
+  extensions:
+    - vortizhe.simple-ruby-erb
