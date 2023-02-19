@@ -5,10 +5,13 @@ class PostsController < ApplicationController
     
     def new
         @post = Post.new
+        @place = Place.find_by({ "id" => params["place_id"] })
+        @post["place_id"] = @place["id"]
     end
 
     def show
-        @post = Post.where({"place_id" => @place["id"]})
+        @post = Post.find_by({ "id" => params["id"] })
+        @place = Place.find_by({ "id" => @post["place_id"] })
     end
 
     def create
