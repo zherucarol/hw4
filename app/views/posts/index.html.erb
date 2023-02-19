@@ -1,0 +1,11 @@
+<h1><%= @place["name"] %></h1>
+ 
+ <ul>
+  <% for post in @posts %>
+    <li><%= post["title"] %></li>
+    <li><%= post["description"] %></li>
+    <li><%= post["posted_on"] %></li>
+  <% end %>
+</ul>
+
+<p><a href="/places/new">New Place</a></p>
