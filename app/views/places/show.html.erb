@@ -1,0 +1,13 @@
+<h1><%= @place["name"] %></h1>
+
+<ul>
+  <% for post in @posts %>
+    <li><%= post["last_name"] %>, <%= contact["first_name"] %></li>
+  <% end %>
+</ul>
+
+<p>
+  <a href="/contacts/new?company_id=<%= @company["id"] %>">New Contact</a>
+</p>
+
+<p><a href="/places">Back to All Places</a></p>
