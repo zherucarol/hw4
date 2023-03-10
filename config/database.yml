@@ -25,4 +25,4 @@ production:
   adapter: postgresql
   database: traveljournel_production
   username: traveljournel
-  password: <%= ENV["TRAVELHOURNEL_DATABASE_PASSWORD"] %>
+  password: <%= ENV["TRAVELJOURNEL_DATABASE_PASSWORD"] %>
