@@ -111,6 +111,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.0-x86_64-linux)
       racc (~> 1.4)
+    pg (1.4.6)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
@@ -175,6 +176,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   debug
+  pg
   puma (~> 5.0)
   rails (~> 7.0.0)
   sqlite3 (~> 1.4)
