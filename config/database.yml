@@ -23,6 +23,6 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: HW4_production
-  username: HW4
+  database: hw4_production
+  username: hw4
   password: <%= ENV["HW4_DATABASE_PASSWORD"] %>
