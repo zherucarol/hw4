@@ -8,11 +8,6 @@
 <div class="row">
   <% for post in @posts %>
     <div class="col-md-4 col-sm-6">
-      <p>
-        <%# find user who created post %>
-        <% user = User.find_by({ "id" => post["user_id"] }) %>
-        <%# handle any potential bad data where the post is missing a user %>
-        <% if user %>
            <strong><p><%= post["title"] %></p></strong>
            <p><%= post["posted_on"] %></p>
              <% if post.uploaded_image.attached? %>
@@ -21,8 +16,6 @@
                 <img src="<%= post["image"] %>" class="img-fluid">
                 <% end %>
              <p class="pt-3"><%= post["description"] %></p>
-        <% end %>
-      </p>
       
       <img src="<%= post["image"] %>" class="img-fluid">
       <p><%= post["body"] %></p>
